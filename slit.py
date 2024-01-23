@@ -39,7 +39,7 @@ st.markdown("""<h1 style='color: #3498db; text-align: center;'>Anime Recommendat
 
 st.write("In this project we are recommending similar animes that you watched. With this you can easily enjoy the next show. In this data only contains 1000 anime.")
 
-anime_title = st.text_input("Enter Anime Name")
+anime_title = st.text_input("Enter Anime Name (Not Full Name of Anime)")
 
 if anime_title != "":
     selected_name = st.selectbox("Select a Name", df.loc[df["Name"].str.contains(anime_title.capitalize())])
